@@ -1,20 +1,358 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container">
+    <h3>Equal-width</h3>
+    <div class="row">
+        <div class="col">
+            1 of 2
+        </div>
+        <div class="col">
+            2 of 2
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col">
+            2 of 3
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="w-100"></div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+    </div>
+    <h3>Setting one column width</h3>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-6">
+            2 of 3 (wider)
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-5">
+            2 of 3 (wider)
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+    <h3>Variable width content</h3>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+            1 of 3
+        </div>
+        <div class="col-md-auto">
+            Variable width content
+        </div>
+        <div class="col col-lg-2">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-md-auto">
+            Variable width content
+        </div>
+        <div class="col col-lg-2">
+            3 of 3
+        </div>
+    </div>
+    <h3>Equal-width multi-row</h3>
+    <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="w-100"></div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div>
+    <h3>All breakpoints</h3>
+    <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div>
+    <div class="row">
+        <div class="col-8">col-8</div>
+        <div class="col-4">col-4</div>
+    </div>
+    <h3>Stacked to horizontal</h3>
+    <div class="row">
+        <div class="col-sm-8">col-sm-8</div>
+        <div class="col-sm-4">col-sm-4</div>
+    </div>
+    <div class="row">
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+    </div>
+    <h3>Mix and match</h3>
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row">
+        <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row">
+        <div class="col-6">.col-6</div>
+        <div class="col-6">.col-6</div>
+    </div>
+    <h3>Vertical alignment</h3>
+    <div class="vertAlign">
+        <div class="row align-items-start">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-start">
+                One of three columns
+            </div>
+            <div class="col align-self-center">
+                One of three columns
+            </div>
+            <div class="col align-self-end">
+                One of three columns
+            </div>
+        </div>
+    </div>
+    <h3>Horizontal alignment</h3>
+    <div class="row justify-content-start">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <h3>Column wrapping</h3>
+    <div class="row">
+        <div class="col-9">.col-9</div>
+        <div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as
+            one contiguous unit.</div>
+        <div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
+    </div>
+    <h3>Column breaks</h3>
+    <div class="row">
+        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
 
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
+
+        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+
+        <!-- Force next columns to break to new line at md breakpoint and up -->
+        <div class="w-100 d-none d-md-block"></div>
+
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+    </div>
+    <h3>Reordering</h3>
+    <div class="row">
+        <div class="col">
+            First, but unordered
+        </div>
+        <div class="col order-12">
+            Second, but last
+        </div>
+        <div class="col order-1">
+            Third, but first
+        </div>
+    </div>
+    <div class="row">
+        <div class="col order-last">
+            First, but last
+        </div>
+        <div class="col">
+            Second, but unordered
+        </div>
+        <div class="col order-first">
+            Third, but first
+        </div>
+    </div>
+    <h3>Offset classes</h3>
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6
+            .offset-lg-0</div>
+    </div>
+    <h3>Margin utilities</h3>
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+        <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+    </div>
+    <div class="row">
+        <div class="col-auto mr-auto">.col-auto .mr-auto</div>
+        <div class="col-auto">.col-auto</div>
+    </div>
+    <h3>Nesting</h3>
+    <div class="row">
+        <div class="col-sm-9">
+            Level 1: .col-sm-9
+            <div class="row">
+                <div class="col-8 col-sm-6">
+                    Level 2: .col-8 .col-sm-6
+                </div>
+                <div class="col-4 col-sm-6">
+                    Level 2: .col-4 .col-sm-6
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>h1. Bootstrap heading</h1>
+    <h2>h2. Bootstrap heading</h2>
+    <h3>h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+    <p class="h1">h1. Bootstrap heading</p>
+    <p class="h2">h2. Bootstrap heading</p>
+    <p class="h3">h3. Bootstrap heading</p>
+    <p class="h4">h4. Bootstrap heading</p>
+    <p class="h5">h5. Bootstrap heading</p>
+    <p class="h6">h6. Bootstrap heading</p>
+    <h3>
+        Fancy display heading
+        <small class="text-muted">With faded secondary text</small>
+    </h3>
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+    <p><u>This line of text will render as underlined</u></p>
+    <p><small>This line of text is meant to be treated as fine print.</small></p>
+    <p><strong>This line rendered as bold text.</strong></p>
+    <p><em>This line rendered as italicized text.</em></p>
+    <ul class="list-unstyled">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit
+            <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+                <li>Vestibulum laoreet porttitor sem</li>
+                <li>Ac tristique libero volutpat at</li>
+            </ul>
+        </li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+    </ul>
+    <ul class="list-inline">
+        <li class="list-inline-item">Lorem ipsum</li>
+        <li class="list-inline-item">Phasellus iaculis</li>
+        <li class="list-inline-item">Nulla volutpat</li>
+    </ul>
+</div>
